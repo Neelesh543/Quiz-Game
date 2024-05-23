@@ -1,0 +1,142 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blue;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+.quiz_container {
+    background-color: white;
+    margin: 100px auto 0;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 20px;
+    padding: 30px;
+
+}
+
+.quiz_container h1 {
+    font-weight: 25px;
+    color: black;
+    border-bottom: 3px solid black;
+    padding-bottom: 25px;
+}
+
+.quiz {
+    padding: 20px, 0;
+}
+
+h2 {
+    font-size: 21px;
+    color: black;
+    font-weight: 500;
+    width: 100%;
+    margin: 9px
+}
+
+.btn {
+    background-color: white;
+    font-size: large;
+    color: black;
+    font-weight: 500;
+    width: 100%;
+    border: 2px solid;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]) {
+    background-color:aqua;
+    color: black;
+}
+.btn:disabled{
+    cursor: no-drop;
+}
+#next {
+    background-color: blueviolet;
+    font-size: 21px;
+    color: black;
+    font-weight: bold;
+    width: 20%;
+    border: 2px solid;
+    padding: 10px;
+    margin: 20px auto 0;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+    cursor: pointer;
+}
+
+#next:hover {
+    background-color: gold;
+    color: red;
+}
+
+.correct{
+    background-color: green;
+}
+.incorrect{
+    background-color: red;
+}
+
+
+  /* Responsive styles */
+  
+  /* Tablet and desktop */
+  @media (min-width: 768px) {
+    .quiz_container {
+      width: 70%;
+    }
+    .btn {
+      width: 45%;
+      margin: 10px 2.5%;
+    }
+    #next {
+      width: 30%;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 767px) {
+    .quiz_container {
+      width: 95%;
+      margin: 50px auto 0;
+    }
+    .btn {
+      width: 90%;
+      margin: 10px 5%;
+    }
+    #next {
+      width: 50%;
+    }
+  }
+  
+  /* Small mobile */
+  @media (max-width: 480px) {
+    .quiz_container {
+      width: 98%;
+      margin: 30px auto 0;
+    }
+    .btn {
+      width: 95%;
+      margin: 10px 2.5%;
+    }
+    #next {
+      width: 60%;
+    }
+  }
